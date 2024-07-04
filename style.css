@@ -16,7 +16,7 @@ body {
     height: 600px;
     background-color: #ECE09F;
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@ body {
     border: 5px solid black;
     border-radius: 50px;
     margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,6 +144,7 @@ input[type="radio"]:checked+.custom-radio {
     font-size: 20px;
     font-family: "Ropa Sans";
     background-color: #F4F0DD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
