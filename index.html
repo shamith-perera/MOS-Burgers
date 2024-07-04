@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOS Burgers - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="yellow-box">
         <div class="inner-box" id="shop-icon">
             <img src="images/icon.png" alt="mos-burgers-icon" class="icon-image">
-            
+
         </div>
         <div class="inner-box" id="login-form">
-            <div class="selection-buttons">
-               
-            </div>
-           
-        </div>
-      
-    </div>
-   
+            <div class="userSelection-buttons">
+                <div class="radio-container">
+                    <label class="label-text">
+                        <input type="radio" name="userSelect" value="cashier">
+                        <div class="custom-radio">
+                            <div class="icon"><img src="icons/cashier.png" alt=""></div>
+                            Cashier
+                        </div>
+                </div>
 
-    
+                <div class="radio-container">
+                    <label class="label-text">
+                        <input type="radio" name="userSelect" value="admin">
+                        <div class="custom-radio">
+                            <div class="icon"><img src="icons/admin.png" alt="" class="icon-img"></div>
+                            Admin
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="login-fields">
+                <div class="login-detail">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Username
+                    <input type="text" class="detail" id="username">
+                </div>
+                <div class="login-detail">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Password
+                    <input type="password" class="detail" id="password">
+                </div>
+            </div>
+            <div class="btns">
+                <input type="button" value="Login" id="btnLogin">
+                <div class="separator"></div>
+                <a href="">Request to Reset Cashier Password</a>
+                <a href="">Request to Reset Admin Password</a>
+                <a href="">Send a Request to Register as a Admin</a>
+            </div>
+        </div>
+    </div>
+    <div class="crText">Mos Burgers@2024 All rights reserved</div>
+
+
+
 </body>
+
 </html>

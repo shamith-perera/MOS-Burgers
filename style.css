@@ -1,31 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    margin: 50px;
+    font-family: "Ropa Sans";
+    font-size: large;
+    flex-direction: column;
 }
 
+
 .yellow-box {
-    width:950px; 
-    height: 600px; 
+    width: 950px;
+    height: 600px;
     background-color: #ECE09F;
-    border-radius: 50px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: row;
 }
 
 .inner-box {
-    width: 400px; 
+    width: 400px;
     height: 500px;
-    padding: 20px; 
-    border: 3px solid black; 
-    border-radius: 50px; 
-    margin: 10px ;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 50px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userSelection-buttons {
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.form-fields {
+    width: 400px;
+    height: 100px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,21 +59,135 @@ body {
     flex-direction: column;
 }
 
-#shop-icon{
+#shop-icon {
     background-color: white;
 }
 
-#login-form{
+#login-form {
     background-color: #ECEBEB;
 }
 
 
-.icon-image{
+.icon-image {
     width: 440px;
     height: 636px;
     border-radius: 200px;
+}
 
 
+input[type="radio"] {
+    opacity: 0;
+}
+
+.custom-radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 120px;
+    border: 4px solid transparent;
+    border-radius: 40px;
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+
+.icon {
+    background-color: #FCB92F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 88px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.icon-img {
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+
+input[type="radio"]:checked+.custom-radio {
+    border-color: black;
+    background-color: #F4F0DD;
 
 }
 
+.login-fields {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-detail {
+    width: 400px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.custom-radio:hover {
+    border-color: gray;
+}
+
+.detail {
+    margin-top: 5px;
+    width: 375px;
+    height: 30px;
+    border-radius: 50px;
+    border: 4px black solid;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Ropa Sans";
+    background-color: #F4F0DD;
+}
+
+
+
+#password {
+    font-size: 30px;
+}
+
+#btnLogin {
+    margin-top: 5px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: 4px black solid;
+    font-size: 20px;
+    font-family: "Ropa Sans";
+    background-color: #FCB92F;
+}
+
+#btnLogin:hover {
+    background-color: #de9b16;
+}
+
+.separator {
+    border-bottom: 1px solid #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+a {
+    font-size: small;
+    margin-bottom: 5px;
+    color: #8B5B12;
+}
+
+.crText {
+    margin-top: 20px;
+    color: gray;
+}
