@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.yellow-box {
+    width:950px; 
+    height: 600px; 
+    background-color: #ECE09F;
+    border-radius: 50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-box {
+    width: 400px; 
+    height: 500px;
+    padding: 20px; 
+    border: 3px solid black; 
+    border-radius: 50px; 
+    margin: 10px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#shop-icon{
+    background-color: white;
+}
+
+#login-form{
+    background-color: #ECEBEB;
+}
+
+
+.icon-image{
+    width: 440px;
+    height: 636px;
+    border-radius: 200px;
+
+
+
+}
+
