@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOS Burgers - Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -57,9 +57,17 @@
     </div>
     <div class="crText">Mos Burgers@2024 All rights reserved</div>
 
+    <div class="overlay" id="overlay"></div>
 
-    <script src="app.js"></script>
-    <script src="data/users.js"></script>
+    <div class="popup" id="popup">
+        <h2>Login Error</h2>
+        <p id="erMsg"></p>
+        <button class="popup-btn" onclick="closePopup()">OK</button>
+    </div>
+
+
+    <script src="JS/app.js"></script>
+    <script src="JS/data/users.js"></script>
 </body>
 
 </html>
