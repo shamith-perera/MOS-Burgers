@@ -10,7 +10,6 @@ body {
     flex-direction: column;
 }
 
-
 .yellow-box {
     width: 950px;
     height: 600px;
@@ -216,7 +215,7 @@ a {
     padding: 20px;
     z-index: 1001; 
     border-radius: 40px;
-    width: 300px;;
+    width: 300px;
 }
 
 
