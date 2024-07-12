@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cehckout - MOS</title>
+    <title>Orders - MOS</title>
     <link rel="stylesheet" href="../../css/layout.css">
 </head>
 <body>
@@ -11,13 +11,13 @@
         <img src="../../assets/images/icon.png" alt="mos-icon" id="icon-image">
 
         <div class="btn-panel">
-            <div class="side-panel-btn-container" id="selected-btn">
+            <div class="side-panel-btn-container" >
                 <button class="side-panel-btn" onclick="navigateToCheckout()">
                     <img src="../../assets/icons/checkout.png" alt="btn-icon" class="side-panel-btn-icon">
                 </button>
                 Checkout
             </div>
-            <div class="side-panel-btn-container">
+            <div class="side-panel-btn-container" id="selected-btn">
                 <button class="side-panel-btn" onclick="navigateToOrders()">
                     <img src="../../assets/icons/order.png" alt="btn-icon" class="side-panel-btn-icon">
                 </button>
@@ -45,7 +45,7 @@
     </div>
 
     <div class="top-bar">
-        <div id="title">Checkout</div>
+        <label id="title">Orders</label>
 
         <div class="user-panel">
             <img src="../../assets/icons/cashier.png" alt="" class="user-icon">
