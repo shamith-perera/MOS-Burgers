@@ -1,3 +1,15 @@
+if (!localStorage.getItem('signedUser')) { 
+    let user = {name:null};
+    let userJson = JSON.stringify(user);
+    localStorage.setItem('signedUser', userJson);
+}
+
+let userJson = localStorage.getItem('signedUser'); 
+let user = JSON.parse(userJson);
+user.name = null; 
+userJson = JSON.stringify(user);
+localStorage.setItem('signedUser', userJson);
+
 document.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
         validateLogin();
@@ -17,15 +29,13 @@ function validateLogin() {
     let password = document.getElementById("password").value;
     if (selectedOption === "cashier") {
         if (checkCashierLogin(username, password)) {
-            window.open('./pages/cashier/checkout.html');
-            window.close(); 
+           window.location.assign('./pages/cashier/checkout.html');
         } else {
             openPopup("Invalid Username/Password");
         }
     } else if (selectedOption === "admin") {
         if (checkAdminLogin(username, password)) {
-            window.open('./pages/admin/customerOverview.html');
-            window.close();  
+            window.location.assign('./pages/admin/customerOverview.html');
         } else {
             openPopup("Invalid Username/Password");
         }
