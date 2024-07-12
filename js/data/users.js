@@ -1,7 +1,8 @@
 if (!localStorage.getItem('users')) { 
     let users = {
       admins :[{name:"testAdmin",username:"admin",password:"Admin"}],
-      cashiers :[{name:"testCashier",username:"cashier",password:"Cashier"}]
+      cashiers :[{name:"testCashier",username:"cashier",password:"Cashier"}],
+      signedUser: null
     };
     let usersJson = JSON.stringify(users);
     localStorage.setItem('users', usersJson);
@@ -13,11 +14,9 @@ function checkAdminLogin(username, password) {
     const admins = storedUsers.admins;
     for (let i = 0; i < admins.length; i++) {
         if (admins[i].username === username && admins[i].password === password) {
-            let userJson = localStorage.getItem('signedUser'); 
-            let user = JSON.parse(userJson);
-            user.name = admins[i].name; 
-            userJson = JSON.stringify(user);
-            localStorage.setItem('signedUser', userJson);   
+            storedUsers.signedUser = admins[i].name;
+            storedUsersJson = JSON.stringify(storedUsers);
+            localStorage.setItem('users', storedUsersJson);   
             return true;    
         }
     }
@@ -29,11 +28,9 @@ function checkCashierLogin(username, password) {
     const cashiers = storedUsers.cashiers;
     for (let i = 0; i < cashiers.length; i++) {
         if (cashiers[i].username === username && cashiers[i].password === password) {
-            let userJson = localStorage.getItem('signedUser'); 
-            let user = JSON.parse(userJson);
-            user.name = cashiers[i].name; 
-            userJson = JSON.stringify(user);
-            localStorage.setItem('signedUser', userJson); 
+            storedUsers.signedUser = cashiers[i].name;
+            storedUsersJson = JSON.stringify(storedUsers);
+            localStorage.setItem('users', storedUsersJson);  
             return true;
         }
     }

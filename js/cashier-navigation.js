@@ -1,10 +1,6 @@
-let userJson = localStorage.getItem('signedUser'); 
-let user = JSON.parse(userJson);
-if(user.name===null){
-    window.location.assign('../../index.html');
-}
-
-document.getElementById('loggedUser').innerText = user.name;
+let storedUsersJson = localStorage.getItem('users');
+let storedUsers = JSON.parse(storedUsersJson);
+document.getElementById('loggedUser').innerText = storedUsers.signedUser;
 
 
 function navigateToCheckout(){
@@ -23,11 +19,10 @@ function navigateToInventory(){
     window.location.assign('../../pages/cashier/inventory.html');
 }
 function logOut(){
-    let userJson = localStorage.getItem('signedUser'); 
-    let user = JSON.parse(userJson);
-    user.name = null; 
-    userJson = JSON.stringify(user);
-    localStorage.setItem('signedUser', userJson);
-    window.location.assign('../../index.html')
+    storedUsers.signedUser = null; 
+    storedUsersJson = JSON.stringify(storedUsers);
+    localStorage.setItem('users', storedUsersJson);
+    window.open('../../pages/login.html');
+    window.close();
 }
 
