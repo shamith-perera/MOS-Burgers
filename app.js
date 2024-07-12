@@ -17,7 +17,7 @@ function validateLogin() {
     let password = document.getElementById("password").value;
     if (selectedOption === "cashier") {
         if (checkCashierLogin(username, password)) {
-            window.open('./pages/cashier/checkout/');
+            window.open('./pages/cashier/checkout/index.html');
             window.close(); 
         } else {
             openPopup("Invalid Username/Password");
