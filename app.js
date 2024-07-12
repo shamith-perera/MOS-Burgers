@@ -1,1 +1,3 @@
-window.open('./pages/login.html')
+function launch(){
+    window.open('./pages/login.html')
+}

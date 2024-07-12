@@ -1,7 +1,7 @@
 if (!localStorage.getItem('users')) { 
     let users = {
-      admins :[{name:"testAdmin",username:"admin",password:"Admin"}],
-      cashiers :[{name:"testCashier",username:"cashier",password:"Cashier"}],
+      admins :[{name:"test Admin",username:"admin",password:"admin"}],
+      cashiers :[{name:"test Cashier",username:"cashier",password:"cashier"}],
       signedUser: null
     };
     let usersJson = JSON.stringify(users);

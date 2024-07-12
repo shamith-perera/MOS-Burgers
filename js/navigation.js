@@ -18,6 +18,22 @@ function navigateToItems(){
 function navigateToInventory(){
     window.location.assign('../../pages/cashier/inventory.html');
 }
+function navigateToCustomerOverview() {
+    window.location.assign('../../pages/admin/customerOverview.html');
+}
+function navigateToOrderOverview() {
+    window.location.assign('../../pages/admin/orderOverview.html');
+}
+function navigateToCashiers() {
+    window.location.assign('../../pages/admin/cashiers.html');
+}
+function navigateToItemsOverview() {
+    window.location.assign('../../pages/admin/itemsOverview.html');
+}
+function navigateToInventoryOverview() {
+    window.location.assign('../../pages/admin/inventoryOverview.html');
+}
+
 function logOut(){
     storedUsers.signedUser = null; 
     storedUsersJson = JSON.stringify(storedUsers);
