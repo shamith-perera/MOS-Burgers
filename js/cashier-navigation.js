@@ -14,7 +14,6 @@ function navigateToInventory(){
     window.location.assign('../../pages/cashier/inventory.html');
 }
 function logOut(){
-    window.close();
-    window.open('../../index.html');
+    window.location.assign('../../index.html');
 }
 
