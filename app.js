@@ -17,13 +17,15 @@ function validateLogin() {
     let password = document.getElementById("password").value;
     if (selectedOption === "cashier") {
         if (checkCashierLogin(username, password)) {
-            window.location.assign('./pages/cashier/checkout.html');
+            window.open('./pages/cashier/checkout.html');
+            window.close(); 
         } else {
             openPopup("Invalid Username/Password");
         }
     } else if (selectedOption === "admin") {
         if (checkAdminLogin(username, password)) {
-            window.location.assign('./pages/admin/customerOverview.html');  
+            window.open('./pages/admin/customerOverview.html');
+            window.close();  
         } else {
             openPopup("Invalid Username/Password");
         }
