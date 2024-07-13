@@ -117,7 +117,7 @@ body {
 }
 
 .log-out-btn:hover{
-    background-color: #97180e;
+    background-color: #df2619;
 }
 
 .log-out-btn-icon{
@@ -135,7 +135,7 @@ body {
 }
 
 .notification-btn:hover{
-    background-color:gray ;
+    background-color:rgb(201, 198, 198) ;
 }
 
 .notification-icon{

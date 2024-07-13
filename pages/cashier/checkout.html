@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cehckout - MOS</title>
     <link rel="stylesheet" href="../../css/layout.css">
     <link rel="icon" type="image/png" href="../../assets/images/icon.png">
+    <link rel="stylesheet" href="../../css/checkout.css">
 </head>
+
 <body>
+    <div class="checkout-box">
+        <h2> Checkout Order</h2>
+        <div class="separator"></div>
+        <div class="scroll-container" id="selected-items">
+            <div class="scroll-content">
+                
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <button class="checkout-btn">
+            Checkout
+        </button>
+    </div>
+
     <div class="side-panel">
         <img src="../../assets/images/icon.png" alt="mos-icon" id="icon-image">
 
@@ -42,7 +60,7 @@
                 </button>
                 Inventory
             </div>
-        </div>  
+        </div>
     </div>
 
     <div class="top-bar">
@@ -59,7 +77,8 @@
             <img src="../../assets/icons/notification.png" alt="" class="notification-icon">
         </button>
     </div>
-    
+
     <script src="../../js/navigation.js"></script>
 </body>
+
 </html>
