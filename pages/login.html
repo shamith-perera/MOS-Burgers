@@ -48,7 +48,7 @@
                 </div>
                 <div class="login-detail">
                     &nbsp;&nbsp;&nbsp;&nbsp;Password
-                    <input type="password" class="detail" id="password">
+                    <input type="password" class="detail" id="password" >
                 </div>
             </div>
             <div class="btns">
@@ -62,13 +62,15 @@
     </div>
     <div class="crText">Mos Burgers@2024 All rights reserved</div>
 
-    <div class="overlay" id="overlay"></div>
-
-    <div class="popup" id="popup">
-        <h2>Login Error</h2>
-        <p id="erMsg"></p>
-        <button class="popup-btn" onclick="closePopup()">OK</button>
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <h2>Login Error</h2>
+            <p id="erMsg"></p>
+            <input type="button" value="OK" id="popup-btn" onclick="closePopup()">
+        </div>
     </div>
+
+    
 
 
     <script src="../js/login.js"></script>

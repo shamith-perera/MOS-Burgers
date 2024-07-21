@@ -17,7 +17,7 @@ function validateLogin() {
     let password = document.getElementById("password").value;
     if (selectedOption === "cashier") {
         if (checkCashierLogin(username, password)) {
-           window.open('../pages/cashier/checkout.html');
+           window.open('../pages/cashier/customers.html');
            window.close();
         } else {
             openPopup("Invalid Username/Password");
@@ -38,11 +38,9 @@ function validateLogin() {
 
 function openPopup(msg) {
     document.getElementById('erMsg').innerText = msg
-    document.getElementById('overlay').style.display = 'block';
-    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'flex';
 }
 
 function closePopup() {
     document.getElementById('overlay').style.display = 'none';
-    document.getElementById('popup').style.display = 'none';
 }

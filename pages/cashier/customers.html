@@ -6,10 +6,43 @@
     <title>Customers - MOS</title>
     <link rel="stylesheet" href="../../css/layout.css">
     <link rel="icon" type="image/png" href="../../assets/images/icon.png">
+    <link rel="stylesheet" href="../../css/customers-style.css">
 </head>
 <body>
     <div class="main-container">
+        <input type="search" id="search-bar"  placeholder="Search Customers by Name or Phone Number">
+        <button id="add-newcustomer-btn">Add New Customer</button>
+        <div class="separator"></div>
+        <div class="scroll-container" id="customers-scroll-container">
+            <div class="scroll-content" id="customer-scroll-content"></div>
+        </div>
 
+    </div>
+
+
+    <div class="overlay" id="overlay">
+        <div class="popup-form">
+          <h1>Add New Customer</h1>
+          <div class="login-detail">
+            &nbsp;&nbsp;&nbsp;&nbsp;Name
+            <input type="text" class="detail" id="customer-name">
+        </div>
+        <div class="login-detail">
+            &nbsp;&nbsp;&nbsp;&nbsp;Phone Number
+            <input type="text" class="detail" id="customer-phone">
+        </div>
+        <div id="display-details"></div>
+          <button id="save-customer-btn">Save</button>
+          <button id="cancel-btn">Cancel</button>
+        </div>
+      </div>
+
+      <div class="overlay" id="msg-overlay">
+        <div class="msg-popup" id="msg-popup">
+            <h2 id="msg-title"></h2>
+            <p id="popup-msg"></p>
+            <button id="popup-msg-btn" onclick="closeMsgPopup()" >OK</button>
+        </div>
     </div>
 
     <div class="side-panel">
@@ -67,6 +100,7 @@
     </div>
     
     <script src="../../js/navigation.js"></script>
+    <script src="../../js/data/customers.js"></script>
     <script src="../../js/time.js"></script>
 </body>
 </html>
